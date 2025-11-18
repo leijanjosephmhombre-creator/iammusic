@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Gallery — Lookbook of LumaCloth." />
+  <title>I AM MUSIC — Gallery</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="12.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">I AM MUSIC CLOTHING</a>
+      <button id="navToggle4" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="site-nav" id="mainNav4">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h1>Lookbook</h1>
+      <p class="lead">Click an image to open the lightbox modal.</p>
+
+      <div class="gallery-grid">
+        <img src="C:\Users\ty\Downloads\1.webp" alt="Look 1" class="gallery-item" data-src="C:\Users\ty\Downloads\1.webp">
+        <img src="C:\Users\ty\Downloads\2.webp" alt="Look 2" class="gallery-item" data-src="C:\Users\ty\Downloads\2 BACK.webp">
+        <img src="C:\Users\ty\Downloads\71CbqKP35bL._AC_UL600_SR600,600_.jpg"alt="Look 3" class="gallery-item" data-src="C:\Users\ty\Downloads\71CbqKP35bL._AC_UL600_SR600,600_.jpg">
+        <img src="C:\Users\ty\Downloads\4.webp" alt="Look 4" class="gallery-item" data-src="C:\Users\ty\Downloads\4.webp">
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="yearGallery"></span> I AM MUSIC CLOTHING — Demo Project</p>
+    </div>
+  </footer>
+
+  <div id="modalGallery" class="modal" aria-hidden="true" role="dialog">
+    <div class="modal-content" role="document">
+      <button class="modal-close" aria-label="Close modal">✕</button>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="123.js" defer></script>
+</body>
+</html>

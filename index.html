@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="LumaCloth — modern, clean clothing for every day. School project demo." />
+  <meta name="keywords" content="clothing, apparel, fashion, luma, lookbook" />
+  <meta name="author" content="Student Name" />
+  <title>I AM MUSIC — Home</title>
+
+  <!-- Custom fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="12.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">I AM MUSIC CLOTHING</a>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="site-nav" id="mainNav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Light. Clean. Everyday Clothing.</h1>
+          <p>Minimal design, crafted for comfort. Browse our latest capsule collection.</p>
+          <a href="products.html" class="btn btn-primary">Shop Collection</a>
+        </div>
+        <div class="hero-media">
+          <div class="slider" id="homeSlider">
+            <div class="slide" style="background-image:url('https://static1.squarespace.com/static/5ec90098a30a5f7e772600f5/t/67dc99183322802ee8e3b9a9/1742510361066/i-am-music-playboi-carti?format=1500w')" data-index="0"></div>
+            <div class="slide" style="background-image:url(https://www.billboard.com/wp-content/uploads/2024/08/cover-playboi-carti-billboard-2024-bb13-matthew-salacuse-6-1548.jpg?w=942&h=628&crop=1)" data-index="1"></div>
+            <div class="slide" style="background-image:url(https://www.billboard.com/wp-content/uploads/2024/08/cover-playboi-carti-billboard-2024-bb13-matthew-salacuse-1-1548.jpg?w=942&h=628&crop=1)" data-index="2"></div>
+            <button class="slider-control prev" data-action="prev" aria-label="Previous slide">‹</button>
+            <button class="slider-control next" data-action="next" aria-label="Next slide">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured products -->
+    <section class="section container" id="featured">
+      <h2 class="section-title">Featured</h2>
+      <div class="product-grid" id="productGrid">
+        <!-- Product cards (placeholder) -->
+        <article class="product-card" data-product-id="1">
+          <img src="C:\Users\ty\Downloads\1 Tee.webp" alt="Product 1">
+          <h3>Essentials Tee</h3>
+          <p class="price">₱799</p>
+          <button class="btn btn-outline btn-view" data-action="openModal" data-src="C:\Users\ty\Downloads\tee 1 back.webp">Quick view</button>
+          
+        </article>
+
+        <article class="product-card" data-product-id="2">
+          <img src="C:\Users\ty\Downloads\jacket 1.webp" alt="Product 2">
+          <h3>Minimal Jacket</h3>
+          <p class="price">₱2,499</p>
+          <button class="btn btn-outline btn-view" data-action="openModal" data-src="C:\Users\ty\Downloads\jacket 1.webp">Quick view</button>
+        </article>
+
+        <article class="product-card" data-product-id="3">
+          <img src="C:\Users\ty\Downloads\PANTS 1.jpg" alt="Product 3">
+          <h3>Everyday Pants</h3>
+          <p class="price">₱1,299</p>
+          <button class="btn btn-outline btn-view" data-action="openModal" data-src="C:\Users\ty\Downloads\PANTS 1.jpg">Quick view</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- About blurb -->
+    <section class="section section-light">
+      <div class="container">
+        <h2 class="section-title">Our Story</h2>
+        <p class="lead">I AM MUSIC CLOTHING started as a student project — a study in minimal design and responsible production. We focus on clean aesthetics, utility, and wearability.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> I AM MUSIC CLOTHING — Demo Project</p>
+      <nav class="footer-nav">
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Modal (shared) -->
+  <div id="modal" class="modal" aria-hidden="true" role="dialog">
+    <div class="modal-content" role="document">
+      <button id="modalClose" class="modal-close" aria-label="Close modal">✕</button>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="123.js" defer></script>
+</body>
+</html>x

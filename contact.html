@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact LumaCloth — send us a message." />
+  <title>I AM MUSIC — Contact</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="12.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">I AM MUSIC CLOTHING</a>
+      <button id="navToggle5" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="site-nav" id="mainNav5">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h1>Contact</h1>
+      <p class="lead">Have a question? Fill the form below. This form includes validation implemented in JavaScript.</p>
+
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="form-row">
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required minlength="2">
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="form-row">
+          <label for="reason">Reason</label>
+          <select id="reason" name="reason" required>
+            <option value="">Select a reason</option>
+            <option value="inquiry">Product inquiry</option>
+            <option value="support">Support</option>
+            <option value="collab">Collaboration</option>
+          </select>
+        </div>
+
+        <fieldset class="form-row">
+          <legend>Subscribe to</legend>
+          <label><input type="checkbox" name="subscribe" value="newsletter"> Newsletter</label>
+          <label><input type="checkbox" name="subscribe" value="offers"> Offers &amp; promos</label>
+        </fieldset>
+
+        <fieldset class="form-row">
+          <legend>Preferred contact</legend>
+          <label><input type="radio" name="contactMethod" value="email" checked> Email</label>
+          <label><input type="radio" name="contactMethod" value="phone"> Phone</label>
+        </fieldset>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Write your message..." required minlength="10"></textarea>
+        </div>
+
+        <div class="form-row">
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <button type="reset" class="btn btn-outline">Reset</button>
+        </div>
+
+        <div id="formFeedback" class="form-feedback" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="yearContact"></span> I AM MUSIC CLOTHING — Demo Project</p>
+    </div>
+  </footer>
+
+  <script src="123.js" defer></script>
+</body>
+</html>
